@@ -1,32 +1,25 @@
-//Create One Stack using one another stack 
-
 import java.util.*;
+import java.lang.*;
 import java.io.*;
 
-public class ReverseStack
+public class Main
 {
-    public static void main(String[] args) 
-    {
-        int arr[]=new int[100];
-        int brr[]=new int[100];
-    
-        int top1=-1,top2=-1;
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc= new Scanner(System.in);
+                String s = sc.next();
 
-        for(int i=0;i<10;i++)
-        {
-            arr[++top1]=i;
-        }
+                Stack<Character> stack1 = new Stack<>();
 
-        while(top1!=-1)
-        {
-            brr[++top2]=arr[top1--];
-        }
-        
-        System.out.println("Reverse Stack is==>");
-        for(int i=0;i<10;i++)
-        {
-            System.out.println(brr[i]);
-        }
+                for(int i=0;i<s.length();i++)
+                        {
+                                stack1.push(s.charAt(i));
+                        }
 
-    }
+               while(!stack1.empty())
+                       {
+                               System.out.print(stack1.pop());
+                       }
+                
+	}
 }
