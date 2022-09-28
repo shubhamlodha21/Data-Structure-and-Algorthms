@@ -13,7 +13,7 @@ int MaxSubArraySum(int *arr,int n)
        if(max<sum)
        {
            max=sum;
-           start1=end1;
+           start=end;
            end=i;
        }
 
