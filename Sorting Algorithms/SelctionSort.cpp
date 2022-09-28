@@ -7,12 +7,12 @@ void SelectionSort(int n,int *arr)
 {
     for(int i=0;i<n-1;i++)
     {
-        int index=i;
+        //int index=i;
         for(int j=i+1;j<n;j++)
         {
-            if(arr[index]>arr[j])
+            if(arr[i]>arr[j])
             {
-                swap(arr[index],arr[j]);
+                swap(arr[i],arr[j]);
             }
         }
     }
